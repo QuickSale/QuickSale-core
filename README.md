@@ -15,8 +15,10 @@ To get you simply just download the application from our website (when it is rel
 ### Prerequisites
 
 The main requirement to using this application is NodeJS which can be installed on almost any operating-system. 
-Refer to <a href="https://nodejs.org/download/">
-
+Refer to <a href="https://nodejs.org/download/">NodeJS Downloads
+___
+Past this point has not been adjusted for the project and instead refers to the seed-project posted by Angular.
+___
 ### Clone angular-seed
 
 Clone the angular-seed repository using [git][git]:
