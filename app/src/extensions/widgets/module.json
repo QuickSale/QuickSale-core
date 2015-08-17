@@ -1,0 +1,13 @@
+{
+  "moduleName": "widgets",
+  "moduleLabel": "widgets",
+  "moduleNamespace": "widgets",
+  "moduleStates": [
+  ],
+  "moduleDependencies": null,
+  "moduleExports": [
+    "/extensions/widgets/controllers/setupController.js",
+    "/extensions/widgets/module.js"
+  ],
+  "scriptDependencies": null
+}

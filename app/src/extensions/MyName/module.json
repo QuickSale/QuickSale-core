@@ -1,0 +1,13 @@
+{
+  "moduleName": "MyName",
+  "moduleLabel": "MyName",
+  "moduleNamespace": "MyName",
+  "moduleStates": [
+  ],
+  "moduleDependencies": null,
+  "moduleExports": [
+    "/extensions/widgets/controllers/setupController.js",
+    "/extensions/widgets/module.js"
+  ],
+  "scriptDependencies": null
+}
