@@ -1,26 +1,21 @@
 # QuickSale - The Javascript only web-shop
 
-This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
-You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
+This application helps businesses deploy web-shops quickly and easily. With extension-support, 
+you can customize your webshop freely.
 
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
+The project is built entirely using Javascript, which is handled both in the back-end and front-end. The project could be edited, in the event you wish to remove some code you do not wish to serve to your clients.
 
-The seed app doesn't do much, just shows how to wire two controllers and views together.
+The base application may only handle basic payments, modules can be added for extra functionality. The team (listed below), may add modules that can be disabled/enabled via the web-panel.
 
 
 ## Getting Started
 
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+To get you simply just download the application from our website (when it is released - refer to release details below).
 
 ### Prerequisites
 
-You need git to clone the angular-seed repository. You can get git from
-[http://git-scm.com/](http://git-scm.com/).
-
-We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
-its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
+The main requirement to using this application is NodeJS which can be installed on almost any operating-system. 
+Refer to <a href="https://nodejs.org/download/">
 
 ### Clone angular-seed
 
