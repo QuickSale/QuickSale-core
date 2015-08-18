@@ -1,4 +1,4 @@
-define(['angular'], function (ng) {
+define(['angular'], function (angular) {
     'use strict';
-    return ng.module('QuickSale.filters', []);
+    return angular.module('QuickSale.filters', []);
 });

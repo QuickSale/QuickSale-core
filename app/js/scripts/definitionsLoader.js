@@ -1,4 +1,4 @@
-define(['jQuery', 'underscore'], function (jQuery, _) {
+define(['jquery', 'underscore'], function (jquery, _) {
     var modules = [];
     var statesToConfigure = [];
     var modulesToLoad = [];
@@ -22,7 +22,7 @@ define(['jQuery', 'underscore'], function (jQuery, _) {
 
 
     var init = function () {
-        jQuery.ajax({
+        jquery.ajax({
             url: "/extensions/modules.json",
             dataType: 'json',
             async: false,

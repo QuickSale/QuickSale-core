@@ -5,9 +5,9 @@ define([
     'ngSortable',
     'controllers/index',
     'directives/index',
-    'filters/index'], function (ng) {
+    'filters/index'], function (angular) {
     'use strict';
-    return ng.module('QuickSale', [
+    return angular.module('QuickSale', [
         'QuickSale.controllers',
         'QuickSale.directives',
         'QuickSale.filters',

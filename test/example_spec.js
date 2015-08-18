@@ -1,12 +1,16 @@
-console.log('....................');
-
-define(function () {
+define(['../app/js/QuickSale.js'], function (app) {
     //console.log('testing test-file', testFile);
+    describe('Testing module core information', function () {
 
-    describe('Testing testing', function () {
-        it('should work', function () {
-            expect(true).toEqual(true);
+        it('should be able to find a module', function () {
+
         });
+
+        it('should find ensure the  ', function () {
+
+        });
+
+
     });
 
 });

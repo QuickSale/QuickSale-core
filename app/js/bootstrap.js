@@ -3,13 +3,12 @@ define([
     'angular',
     'routes',
     'definitionsLoader',
-    'jQuery',
     'underscore',
     'ngRoute',
     'ngSanitize',
     'uiRouter'
 
-], function (require, ng, routes, definitionsLoader) {
+], function (require, angular, routes, definitionsLoader) {
     'use strict';
     require(definitionsLoader.scriptsToLoad, function () {
         routes.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
@@ -52,7 +51,7 @@ define([
         require(['domReady!'], function (document) {
             try {
                 // Wrap this call to try/catch
-                ng.bootstrap(document, ['QuickSale']);
+                angular.bootstrap(document, ['QuickSale']);
             }
             catch (e) {
                 console.error(e.stack || e.message || e);

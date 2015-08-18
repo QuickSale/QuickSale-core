@@ -1,7 +1,8 @@
 'use strict';
 require.config({
+    waitSeconds: 10,
     paths: {
-        "jQuery": "../bower_components/jquery/dist/jquery",
+        "jquery": "../bower_components/jquery/dist/jquery",
         "angular": "../bower_components/angular/angular",
         "ngRoute": "../bower_components/angular-route/angular-route",
         "ngSanitize": "../bower_components/angular-sanitize/angular-sanitize",
@@ -16,8 +17,9 @@ require.config({
         "routes": "routes"
     },
     shim: {
-        'angular': {
-            exports: 'angular'
+        angular: {
+            exports: "angular",
+            deps: ['jquery']
         },
         'Sortable': {
             exports: 'Sortable'
@@ -28,18 +30,13 @@ require.config({
         },
         'ngUi': ['angular'],
         'ngRoute': ['angular'],
-        'uiRouter': {
-            deps: ['angular']
-        },
+        'uiRouter': ['angular'],
         'ngSanitize': ['angular'],
         'definitionsLoader': {
             exports: 'definitionsLoader'
         },
         'underscore': {
             exports: '_'
-        },
-        'jQuery': {
-            exports: 'jQuery'
         },
         'routes': {
             exports: 'routes'

@@ -1,4 +1,4 @@
-define(['./QuickSale'], function (QuickSale) {
+define(['QuickSale'], function (QuickSale) {
     'use strict';
     return QuickSale.config(function ($stateProvider) {
         $stateProvider
