@@ -2,7 +2,6 @@ var allTestFiles = [];
 var TEST_REGEXP = /(_spec|_test)\.js$/i;
 for (var file in window.__karma__.files) {
   if (TEST_REGEXP.test(file)) allTestFiles.push(file);
-  console.log(file);
 }
 require.config({
   baseUrl: '/base/app/js',
@@ -20,7 +19,7 @@ require.config({
     "domReady": "../bower_components/requirejs-domready/domReady",
     "definitionsLoader": "scripts/definitionsLoader",
     "routes": "routes",
-    angularMocks: "bower_components/angular-mocks/angular-mocks"
+    angularMocks: "../bower_components/angular-mocks/angular-mocks"
   },
   shim: {
     angular: {

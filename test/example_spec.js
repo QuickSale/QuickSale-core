@@ -1,16 +1,20 @@
-define(['../app/js/QuickSale.js'], function (app) {
-    //console.log('testing test-file', testFile);
+define(['../app/js/bootstrap.js', 'angularMocks'], function (app, angularMocks) {
+
     describe('Testing module core information', function () {
+        beforeEach(module('QuickSale'));
 
-        it('should be able to find a module', function () {
+        var $controller;
+        beforeEach(inject(function (_$controller_) {
+            // The injector unwraps the underscores (_) from around the parameter names when matching
+            $controller = _$controller_;
+        }));
 
-        });
-
-        it('should find ensure the  ', function () {
-
+        it('should be able to find the core-application controllers are registered.', function () {
+            var $scope = {};
+            var controller = $controller('builderController', {$scope: $scope});
+            expect($scope.pages.length).toEqual(2);
         });
 
 
     });
-
 });

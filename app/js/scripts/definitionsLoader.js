@@ -4,7 +4,6 @@ define(['jquery', 'underscore'], function (jquery, _) {
     var modulesToLoad = [];
     var scriptsToLoad = [];
 
-
     //Generates a string array with all the needed modules to load
     function generateModulesToLoad(globalDependencies) {
         for (var i = 0; i < modules.length; i++) {
@@ -20,10 +19,9 @@ define(['jquery', 'underscore'], function (jquery, _) {
         return globalDependencies;
     }
 
-
     var init = function () {
         jquery.ajax({
-            url: "/extensions/modules.json",
+            url: "../../../extensions/modules.json",
             dataType: 'json',
             async: false,
             success: function (data) {
@@ -75,10 +73,7 @@ define(['jquery', 'underscore'], function (jquery, _) {
         statesToConfigure: statesToConfigure,
         modulesToLoad: modulesToLoad,
         modules: modules
-
     }
-
-
 });
 
 

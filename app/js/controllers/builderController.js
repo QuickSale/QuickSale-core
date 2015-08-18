@@ -1,6 +1,6 @@
 define(['./module', 'definitionsLoader'], function (controllers, definitionsLoader) {
     'use strict';
-    function builderController($scope) {
+    return controllers.controller('builderController', function ($scope) {
         // Fetch page names...
         $scope.pages = [{pageTitle: "Home", page_id: 1}, {pageTitle: "About Us", page_id: 2}];
         $scope.fetchArray = function (array, attributes) {
@@ -32,7 +32,5 @@ define(['./module', 'definitionsLoader'], function (controllers, definitionsLoad
 
         };
         $scope.changePage(1);
-    }
-
-    return controllers.controller('builderController', builderController);
+    });
 });

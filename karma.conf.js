@@ -18,6 +18,7 @@ module.exports = function (config) {
             {pattern: 'app/bower_components/jquery/dist/jquery.js', included: false},
             {pattern: 'app/bower_components/**/*.js', included: false},
             {pattern: 'test/*.js', included: false},
+            {pattern: 'app/extensions/**/*', included: false},
             {pattern: 'app/**/!(main).js', included: false},
             {pattern: 'test-main.js', included: true}
 
