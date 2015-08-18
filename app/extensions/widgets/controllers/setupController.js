@@ -1,4 +1,4 @@
-define(['angular', 'jquery', '../module.js'], function (ng, jQuery, module) {
+define(['angular', 'jquery', '../module.js'], function (angular, jQuery, module) {
     'use strict';
     module.controller("setupController", ["$scope", function ($scope) {
         /*
