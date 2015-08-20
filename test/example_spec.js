@@ -9,12 +9,10 @@ define(['../app/js/bootstrap.js', 'angularMocks'], function (app, angularMocks) 
             $controller = _$controller_;
         }));
 
-        it('should be able to find the core-application controllers are registered.', function () {
+      it('should be able to find the builderController as a registered module.', function () {
             var $scope = {};
             var controller = $controller('builderController', {$scope: $scope});
-            expect($scope.pages.length).toEqual(2);
+        expect(controller).not.toBeNull();
         });
-
-
     });
 });

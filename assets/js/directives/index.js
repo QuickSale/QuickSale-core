@@ -1,0 +1,5 @@
+define([
+  './moduleEditorDirective',
+  './inputFieldDirective'
+], function () {
+});
