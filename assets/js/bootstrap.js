@@ -11,6 +11,7 @@ define([
 ], function (require, angular, routes, definitionsLoader) {
   'use strict';
   require(definitionsLoader.scriptsToLoad, function () {
+
     routes.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
       //When no route redirect to home
       $urlRouterProvider.when('', '/build');
@@ -34,15 +35,13 @@ define([
         var module = modules[i];
         views[module.moduleName + '_module_edit'] = {
           templateUrl: '/extensions/' + module.moduleNamespace + '/views/setup_module.html',
-          controllerUrl: '/extensions/' + module.moduleNamespace + '/controllers/setupController.js'
+          controller: 'moduleController'
         };
       }
       $stateProvider.state('build.editor.modules', {
         url: '',
         views: views
       });
-
-
     }]).run(['$rootScope', function ($rootScope) {
       $rootScope.modules = definitionsLoader.modules;
     }]);

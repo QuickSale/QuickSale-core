@@ -1,18 +1,5 @@
 [
   {
-    "moduleName": "widgets",
-    "moduleLabel": "widgets",
-    "moduleNamespace": "widgets",
-    "moduleStates": [
-    ],
-    "moduleDependencies": null,
-    "moduleExports": [
-      "/extensions/widgets/controllers/setupController.js",
-      "/extensions/widgets/module.js"
-    ],
-    "scriptDependencies": null
-  },
-  {
     "moduleName": "MyName",
     "moduleLabel": "MyName",
     "moduleNamespace": "MyName",
@@ -20,8 +7,7 @@
     ],
     "moduleDependencies": null,
     "moduleExports": [
-      "/extensions/widgets/controllers/setupController.js",
-      "/extensions/widgets/module.js"
+      "/extensions/MyName/index.js"
     ],
     "scriptDependencies": null
   }

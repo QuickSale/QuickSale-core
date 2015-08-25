@@ -33,8 +33,8 @@ module.exports.routes = {
    ***************************************************************************/
 
   '/': {
-    view: ''
-  }
+    view: 'index'
+  },
 
   /***************************************************************************
    *                                                                          *
@@ -45,5 +45,28 @@ module.exports.routes = {
    * for configuration options and examples.                                  *
    *                                                                          *
    ***************************************************************************/
+  /**
+   * All Post routes (for creation)
+   */
+  'post /api/pages': {controller: 'PagesController', action: 'pagePost'},
+  // The two below can be combined, but for now they will be split.
+  'post /api/pages/:pageName/plugins': {controller: 'PluginsController', action: 'pluginPost'},
+  'post /api/pages/:pageName/plugins/:pluginId': {controller: 'PluginsController', action: 'confPost'},
+
+  /**
+   * All Delete routes (for deletion)
+   */
+  'delete /api/pages/:pageName': {controller: 'PagesController', action: 'pageDelete'},
+  // The two below can be combined, but for now they will be split.
+  'delete /api/pages/:pageName/plugins/:pluginId': {controller: 'PluginsController', action: 'pluginDelete'},
+  'delete /api/pages/:pageName/plugins/:pluginId/:confName': {controller: 'PluginsController', action: 'confDelete'},
+
+  /**
+   * All Get routes (for fetching information)
+   */
+  'get /api/pages/:pageName?': {controller: 'PagesController', action: 'pagesFetch'},
+  // The two below can be combined, but for now they will be split.
+  'get /api/pages/:pageName/plugins/:pluginId?': {controller: 'PluginsController', action: 'pluginsFetch'},
+  'get /api/pages/:pageName/plugins/:pluginId/:confName': {controller: 'PluginsController', action: 'confFetch'},
 
 };

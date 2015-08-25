@@ -26,7 +26,7 @@ define(['jquery', 'underscore'], function (jquery, _) {
       async: false,
       success: function (data) {
         modules = data;
-        modulesToLoad = generateModulesToLoad(['ui.bootstrap', 'ui.compat', 'ui']);
+        modulesToLoad = generateModulesToLoad([]);
         statesToConfigure = generateStatesToConfigure();
         scriptsToLoad = generateScriptsToLoad();
 

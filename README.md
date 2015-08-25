@@ -84,7 +84,7 @@ app/                          --> all of the source files for the application
     filters/                  --> all the application's filters
     scripts/                  --> all the application's internal scripts
     bootstrap.js
-    main.js
+    mainController.js
     QuickSale.js
     routes.js
   extensions/                 --> all the application's external extensions (dynamically added)

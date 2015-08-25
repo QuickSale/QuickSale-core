@@ -2,7 +2,7 @@ define(['./module'], function (directives) {
   'use strict';
   directives.directive('moduleEdit', function () {
     return {
-      restrict: 'A',
+      restrict: 'AE',
       scope: {
         moduleId: "@moduleId"
       }

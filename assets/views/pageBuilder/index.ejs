@@ -20,7 +20,7 @@
           <span class="glyphicon glyphicon-plus pull-right pointer" aria-hidden="true"></span>
         </div>
         <ul class="list-group">
-          <button class="list-group-item" ng-repeat="module in allModules">
+          <button class="list-group-item" ng-click="addModule(module.moduleName);" ng-repeat="module in allModules">
             {{module.moduleName}}
           </button>
         </ul>

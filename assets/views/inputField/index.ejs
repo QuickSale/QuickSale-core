@@ -1,1 +1,3 @@
-<input type="{{type}}" class="form-control pad-side marg-side-2-percent {{class}}" placeholder="{{placeholder}}">
+<input type="{{type}}" class="form-control pad-side marg-side-2-percent {{class}}" data="{{data}}"
+       placeholder="{{dataStatus}}" ng-model-options="{ debounce: 1000 }" ng-change="updateData()"
+       ng-model="inputInfo.content">

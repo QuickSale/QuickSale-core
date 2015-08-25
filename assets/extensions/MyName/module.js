@@ -1,4 +1,4 @@
-'use strict';
-define(['angular'], function (ng) {
-  return ng.module('MyName', []);
+define(['angular'], function (angular) {
+  'use strict';
+  return angular.module('MyName', []);
 });

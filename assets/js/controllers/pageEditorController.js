@@ -2,7 +2,6 @@ define(['./module'], function (controllers) {
   'use strict';
   controllers.controller('pageEditorController', ['$scope', function ($scope) {
     $scope.module_editing = [];
-
     $scope.saveModule = function (module_id) {
       $scope.module_editing.splice($scope.module_editing.indexOf(module_id), 1);
       $scope.$broadcast('disable_editMode', module_id);

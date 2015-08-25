@@ -1,4 +1,4 @@
 define([
-  './setupController'
+  './mainController.js'
 ], function () {
 });
